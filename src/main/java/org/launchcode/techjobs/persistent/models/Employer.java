@@ -29,6 +29,7 @@ public class Employer extends AbstractEntity {
         this.location = location;
     }
 
+
     public @Size(min = 3, max = 30, message = "location must be in between 3 and 30 characters!") @NotBlank(message = "Location must not be blank") String getLocation() {
         return location;
     }
